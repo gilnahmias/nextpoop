@@ -2,7 +2,7 @@
 
 ## Setup
 
-Make sure to have [bundle](http://bundler.io/). If you don't, install it by typing:
+Make sure to have [bundler](http://bundler.io/). If you don't, install it by typing:
 ```
 $ gem install bundler
 ```
