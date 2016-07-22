@@ -14,8 +14,8 @@ puts "Started at " + Time::now.to_s
 loop do
   while (pkt = capture.next())
     packet = EthernetFrame.parse(pkt).payload.output #.inspect
-	sender = packet[:sender_hw_addr]
-	target = packet[:target_hw_addr]
+    sender = packet[:sender_hw_addr]
+    target = packet[:target_hw_addr]
 
     if (sender == DASH_MILK_BABY and target == NEW_CONNECTION)
     	log_event("Pooped")
